@@ -13,7 +13,12 @@ import org.jsoup.select.Elements;
 public class WikiPhilosophy {
 	
 	final static WikiFetcher wf = new WikiFetcher();
-	
+    static int parens = 0;
+    
+    //list of strings of the visited urls
+    static List<String> visitedUrls = new ArrayList<String>();
+    
+    
 	/**
 	 * Tests a conjecture about Wikipedia and Philosophy.
 	 * 
@@ -28,24 +33,89 @@ public class WikiPhilosophy {
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws IOException {
-		
-        // some example code to get you started
-
+        
 		String url = "https://en.wikipedia.org/wiki/Java_(programming_language)";
-		Elements paragraphs = wf.fetchWikipedia(url);
-
-		Element firstPara = paragraphs.get(0);
+        String targetUrl = "https://en.wikipedia.org/wiki/Philosophy";
+        //add the starting url to the visited list
+        visitedUrls.add(url);
+        boolean finished = false;
+        boolean reachedTarget = false;
+        
+        if(!finished){
+            Elements paragraphs = wf.fetchWikipedia(url);
+            Element firstPara = paragraphs.get(0);
 		
-		Iterable<Node> iter = new WikiNodeIterable(firstPara);
-		for (Node node: iter) {
-			if (node instanceof TextNode) {
-				System.out.print(node);
-			}
+            Iterable<Node> iter = new WikiNodeIterable(firstPara);
+        
+            for (Node node: iter) {
+                if (node instanceof TextNode) {
+                    if(((TextNode)node).text().contains("(")){
+                        //add 1 when you see an open parenthese
+                        parens++;
+                    }
+                    if(((TextNode)node).text().contains(")")){
+                        //subtract 1 when you see an open parenthese
+                        parens--;
+                    }
+                    //the parentheses will cancel each other out at the end
+                }
+                if (node instanceof Element){
+                    String currURL = ((Element)node).attr("abs:href");
+                    if(isValid((Element)node, url)){
+                        if(visitedUrls.contains(currURL)){
+                            finished = true;
+                        }
+                        visitedUrls.add(currURL);
+                        url = currURL;
+                        if(visitedUrls.contains(targetUrl)){
+                            finished = true;
+                            reachedTarget = true;
+                        }
+                        break;
+                    }
+                }
+            }
         }
 
-        // the following throws an exception so the test fails
-        // until you update the code
-        String msg = "Complete this lab by adding your code and removing this statement.";
-        throw new UnsupportedOperationException(msg);
+        if(reachedTarget){
+            System.out.println("SUCCESS: Page has been found!");
+        }else{
+            System.out.println("FAILURE: Page was not found.");
+        }
+    
+        for(String tempURL: visitedUrls){
+            System.out.println(tempURL);
+        }
 	}
+    
+    public static boolean isValid(Element e, String url){
+        //get the text from the element
+        String curr = e.attr("abs:href");
+        
+        //check the element is not an empty string
+        if(curr == ""){
+            return false;
+        }
+        
+        //check if current link
+        if(curr.equals(url)){
+            return false;
+        }
+        
+        //check for italics by going up the parent links
+        Element parent = e;
+        while(parent != null){
+            if(parent.tagName().equals("i") || parent.tagName().equals("em")){
+                return false;
+            }
+        }
+        
+        //check for parentheses
+        if(parens != 0){
+            return false;
+        }
+        
+        visitedUrls.add(curr);
+        return true;
+    }
 }
