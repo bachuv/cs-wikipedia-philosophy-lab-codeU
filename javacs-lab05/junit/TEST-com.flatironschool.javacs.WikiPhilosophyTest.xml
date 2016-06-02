@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Varshithas-MacBook-Pro.local" name="com.flatironschool.javacs.WikiPhilosophyTest" skipped="0" tests="1" time="5.435" timestamp="2016-06-02T23:42:18">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="env.XPC_SERVICE_NAME" value="0" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="env._system_arch" value="x86_64" />
+    <property name="env.GEM_HOME" value="/Users/VarshiBachu/.rvm/gems/ruby-2.3.0" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/classes" />
+    <property name="env.TMPDIR" value="/var/folders/n9/02066st538950v32k34hsms40000gn/T/" />
+    <property name="env.PWD" value="/Users/VarshiBachu/learn/cs-wikipedia-philosophy-lab-codeU" />
+    <property name="env.LANG" value="en_US.UTF-8" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/usr/local/Cellar/ant/1.9.6/libexec" />
+    <property name="java.runtime.version" value="1.8.0_77-b03" />
+    <property name="env.MY_RUBY_HOME" value="/Users/VarshiBachu/.rvm/rubies/ruby-2.3.0" />
+    <property name="env.Apple_PubSub_Socket_Render" value="/private/tmp/com.apple.launchd.d8Ed32DxtM/Render" />
+    <property name="env.rvm_version" value="1.27.0 (latest)" />
+    <property name="user.name" value="VarshiBachu" />
+    <property name="env.USER" value="VarshiBachu" />
+    <property name="env.SHELL" value="/bin/bash" />
+    <property name="env.__CF_USER_TEXT_ENCODING" value="0x1F5:0x0:0x0" />
+    <property name="env._system_type" value="Darwin" />
+    <property name="env.PATH" value="/Users/VarshiBachu/.rvm/gems/ruby-2.3.0/bin:/Users/VarshiBachu/.rvm/gems/ruby-2.3.0@global/bin:/Users/VarshiBachu/.rvm/rubies/ruby-2.3.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/VarshiBachu/.rvm/bin" />
+    <property name="user.language" value="en" />
+    <property name="env.rvm_prefix" value="/Users/VarshiBachu" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib" />
+    <property name="ant.project.default-target" value="build" />
+    <property name="env.XPC_FLAGS" value="0x0" />
+    <property name="ant.project.name" value="JavaCS" />
+    <property name="env.rvm_path" value="/Users/VarshiBachu/.rvm" />
+    <property name="env.RUBY_VERSION" value="ruby-2.3.0" />
+    <property name="java.version" value="1.8.0_77" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="env._system_name" value="OSX" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="env.rvm_bin_path" value="/Users/VarshiBachu/.rvm/bin" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="env.SHLVL" value="3" />
+    <property name="file.separator" value="/" />
+    <property name="env._system_version" value="10.11" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="52.0" />
+    <property name="user.country" value="US" />
+    <property name="ant.file.JavaCS" value="/Users/VarshiBachu/learn/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/build.xml" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="env.LOGNAME" value="VarshiBachu" />
+    <property name="ant.file" value="/Users/VarshiBachu/learn/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/build.xml" />
+    <property name="os.version" value="10.11.5" />
+    <property name="env.TERM_PROGRAM_VERSION" value="361.1" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="25.77-b03" />
+    <property name="ant.library.dir" value="/usr/local/Cellar/ant/1.9.6/libexec/lib" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="env.IRBRC" value="/Users/VarshiBachu/.rvm/rubies/ruby-2.3.0/.irbrc" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+    <property name="env.TERM" value="xterm-256color" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="env.GEM_PATH" value="/Users/VarshiBachu/.rvm/gems/ruby-2.3.0:/Users/VarshiBachu/.rvm/gems/ruby-2.3.0@global" />
+    <property name="user.home" value="/Users/VarshiBachu" />
+    <property name="target" value="1.7" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="env.TERM_PROGRAM" value="Apple_Terminal" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.library.path" value="/Users/VarshiBachu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="gopherProxySet" value="false" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+    <property name="java.class.path" value="/Users/VarshiBachu/learn/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/bin:/Users/VarshiBachu/learn/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/lib/jsoup-1.8.3.jar:/Users/VarshiBachu/learn/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/lib/junit-4.12.jar:/Users/VarshiBachu/learn/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/lib/hamcrest-core-1.3.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-launcher.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-junit.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.flatironschool.javacs.WikiPhilosophyTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/VarshiBachu/learn/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/junit/TEST-com.flatironschool.javacs.WikiPhilosophyTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/Users/VarshiBachu/learn/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/junitvmwatcher3031711899518550153.properties propsfile=/Users/VarshiBachu/learn/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/junit8170147102587823001.properties" />
+    <property name="env.TERM_SESSION_ID" value="38A94310-D9C4-43F2-856C-19A5C5E0FF41" />
+    <property name="ant.file.type.JavaCS" value="file" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="env.HOME" value="/Users/VarshiBachu" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="java.io.tmpdir" value="/var/folders/n9/02066st538950v32k34hsms40000gn/T/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="env.JAVA_MAIN_CLASS_3007" value="org.apache.tools.ant.launch.Launcher" />
+    <property name="env.SSH_AUTH_SOCK" value="/private/tmp/com.apple.launchd.bAZXWyU0Sc/Listeners" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="os.arch" value="x86_64" />
+    <property name="java.ext.dirs" value="/Users/VarshiBachu/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="user.dir" value="/Users/VarshiBachu/learn/cs-wikipedia-philosophy-lab-codeU" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="/Users/VarshiBachu/learn/cs-wikipedia-philosophy-lab-codeU/javacs-lab05" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="/usr/local/Cellar/ant/1.9.6/libexec/lib/ant.jar" />
+    <property name="source" value="1.7" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="ant.project.invoked-targets" value="test" />
+  </properties>
+  <testcase classname="com.flatironschool.javacs.WikiPhilosophyTest" name="testMain" time="5.071" />
+  <system-out><![CDATA[main
+<p><b>Java</b> is a general-purpose <a href="/wiki/Programming_language" title="Programming language">computer programming language</a> that is <a href="/wiki/Concurrent_computing" title="Concurrent computing">concurrent</a>, <a href="/wiki/Class-based_programming" title="Class-based programming">class-based</a>, <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a>,<sup id="cite_ref-FOOTNOTEGoslingJoySteeleBracha20141_14-0" class="reference"><a href="#cite_note-FOOTNOTEGoslingJoySteeleBracha20141-14">[14]</a></sup> and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers "<a href="/wiki/Write_once,_run_anywhere" title="Write once, run anywhere">write once, run anywhere</a>" (WORA),<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup> meaning that <a href="/wiki/Compiler" title="Compiler">compiled</a> Java code can run on all platforms that support Java without the need for recompilation.<sup id="cite_ref-design_goals_16-0" class="reference"><a href="#cite_note-design_goals-16">[16]</a></sup> Java applications are typically compiled to <a href="/wiki/Java_bytecode" title="Java bytecode">bytecode</a> that can run on any <a href="/wiki/Java_virtual_machine" title="Java virtual machine">Java virtual machine</a> (JVM) regardless of <a href="/wiki/Computer_architecture" title="Computer architecture">computer architecture</a>. As of 2016, Java is one of the most <a href="/wiki/Measuring_programming_language_popularity" title="Measuring programming language popularity">popular programming languages in use</a>,<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[17]</a></sup><sup id="cite_ref-18" class="reference"><a href="#cite_note-18">[18]</a></sup><sup id="cite_ref-languagepopularity2013_19-0" class="reference"><a href="#cite_note-languagepopularity2013-19">[19]</a></sup><sup id="cite_ref-20" class="reference"><a href="#cite_note-20">[20]</a></sup> particularly for client-server web applications, with a reported 9 million developers.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (April 2015)">citation needed</span></a></i>]</sup> Java was originally developed by <a href="/wiki/James_Gosling" title="James Gosling">James Gosling</a> at <a href="/wiki/Sun_Microsystems" title="Sun Microsystems">Sun Microsystems</a> (which has since been <a href="/wiki/Sun_acquisition_by_Oracle" title="Sun acquisition by Oracle">acquired by Oracle Corporation</a>) and released in 1995 as a core component of Sun Microsystems' <a href="/wiki/Java_(software_platform)" title="Java (software platform)">Java platform</a>. The language derives much of its <a href="/wiki/Syntax_(programming_languages)" title="Syntax (programming languages)">syntax</a> from <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="/wiki/C%2B%2B" title="C++">C++</a>, but it has fewer <a href="/wiki/Low-level_programming_language" title="Low-level programming language">low-level</a> facilities than either of them.</p>
+<p><b>Java</b> is a general-purpose <a href="/wiki/Programming_language" title="Programming language">computer programming language</a> that is <a href="/wiki/Concurrent_computing" title="Concurrent computing">concurrent</a>, <a href="/wiki/Class-based_programming" title="Class-based programming">class-based</a>, <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented</a>,<sup id="cite_ref-FOOTNOTEGoslingJoySteeleBracha20141_14-0" class="reference"><a href="#cite_note-FOOTNOTEGoslingJoySteeleBracha20141-14">[14]</a></sup> and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers "<a href="/wiki/Write_once,_run_anywhere" title="Write once, run anywhere">write once, run anywhere</a>" (WORA),<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup> meaning that <a href="/wiki/Compiler" title="Compiler">compiled</a> Java code can run on all platforms that support Java without the need for recompilation.<sup id="cite_ref-design_goals_16-0" class="reference"><a href="#cite_note-design_goals-16">[16]</a></sup> Java applications are typically compiled to <a href="/wiki/Java_bytecode" title="Java bytecode">bytecode</a> that can run on any <a href="/wiki/Java_virtual_machine" title="Java virtual machine">Java virtual machine</a> (JVM) regardless of <a href="/wiki/Computer_architecture" title="Computer architecture">computer architecture</a>. As of 2016, Java is one of the most <a href="/wiki/Measuring_programming_language_popularity" title="Measuring programming language popularity">popular programming languages in use</a>,<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[17]</a></sup><sup id="cite_ref-18" class="reference"><a href="#cite_note-18">[18]</a></sup><sup id="cite_ref-languagepopularity2013_19-0" class="reference"><a href="#cite_note-languagepopularity2013-19">[19]</a></sup><sup id="cite_ref-20" class="reference"><a href="#cite_note-20">[20]</a></sup> particularly for client-server web applications, with a reported 9 million developers.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (April 2015)">citation needed</span></a></i>]</sup> Java was originally developed by <a href="/wiki/James_Gosling" title="James Gosling">James Gosling</a> at <a href="/wiki/Sun_Microsystems" title="Sun Microsystems">Sun Microsystems</a> (which has since been <a href="/wiki/Sun_acquisition_by_Oracle" title="Sun acquisition by Oracle">acquired by Oracle Corporation</a>) and released in 1995 as a core component of Sun Microsystems' <a href="/wiki/Java_(software_platform)" title="Java (software platform)">Java platform</a>. The language derives much of its <a href="/wiki/Syntax_(programming_languages)" title="Syntax (programming languages)">syntax</a> from <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="/wiki/C%2B%2B" title="C++">C++</a>, but it has fewer <a href="/wiki/Low-level_programming_language" title="Low-level programming language">low-level</a> facilities than either of them.</p>
+<b>Java</b>
+<b>Java</b>
+Java
+ is a general-purpose 
+<a href="/wiki/Programming_language" title="Programming language">computer programming language</a>
+<a href="/wiki/Programming_language" title="Programming language">computer programming language</a>
+is valid
+current url
+https://en.wikipedia.org/wiki/Programming_language
+<p>A <b>programming language</b> is a <a href="/wiki/Formal_language" title="Formal language">formal</a> <a href="/wiki/Computer_language" title="Computer language">computer language</a> or <a href="/wiki/Constructed_language" title="Constructed language">constructed language</a> designed to communicate <a href="/wiki/Machine_instruction" title="Machine instruction" class="mw-redirect">instructions</a> to a <a href="/wiki/Machine" title="Machine">machine</a>, particularly a <a href="/wiki/Computer" title="Computer">computer</a>. Programming languages can be used to create <a href="/wiki/Program_(machine)" title="Program (machine)">programs</a> to control the behavior of a machine or to express <a href="/wiki/Algorithm" title="Algorithm">algorithms</a>.</p>
+<p>A <b>programming language</b> is a <a href="/wiki/Formal_language" title="Formal language">formal</a> <a href="/wiki/Computer_language" title="Computer language">computer language</a> or <a href="/wiki/Constructed_language" title="Constructed language">constructed language</a> designed to communicate <a href="/wiki/Machine_instruction" title="Machine instruction" class="mw-redirect">instructions</a> to a <a href="/wiki/Machine" title="Machine">machine</a>, particularly a <a href="/wiki/Computer" title="Computer">computer</a>. Programming languages can be used to create <a href="/wiki/Program_(machine)" title="Program (machine)">programs</a> to control the behavior of a machine or to express <a href="/wiki/Algorithm" title="Algorithm">algorithms</a>.</p>
+A 
+<b>programming language</b>
+<b>programming language</b>
+programming language
+ is a 
+<a href="/wiki/Formal_language" title="Formal language">formal</a>
+<a href="/wiki/Formal_language" title="Formal language">formal</a>
+is valid
+current url
+https://en.wikipedia.org/wiki/Formal_language
+<p>In <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>, <a href="/wiki/Computer_science" title="Computer science">computer science</a>, and <a href="/wiki/Linguistics" title="Linguistics">linguistics</a>, a <b>formal language</b> is a <a href="/wiki/Set_(mathematics)" title="Set (mathematics)">set</a> of <a href="/wiki/String_(computer_science)" title="String (computer science)">strings</a> of <a href="/wiki/Symbol_(formal)" title="Symbol (formal)">symbols</a> that may be constrained by rules that are specific to it.</p>
+<p>In <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>, <a href="/wiki/Computer_science" title="Computer science">computer science</a>, and <a href="/wiki/Linguistics" title="Linguistics">linguistics</a>, a <b>formal language</b> is a <a href="/wiki/Set_(mathematics)" title="Set (mathematics)">set</a> of <a href="/wiki/String_(computer_science)" title="String (computer science)">strings</a> of <a href="/wiki/Symbol_(formal)" title="Symbol (formal)">symbols</a> that may be constrained by rules that are specific to it.</p>
+In 
+<a href="/wiki/Mathematics" title="Mathematics">mathematics</a>
+<a href="/wiki/Mathematics" title="Mathematics">mathematics</a>
+is valid
+current url
+https://en.wikipedia.org/wiki/Mathematics
+<p><b>Mathematics</b> (from <a href="/wiki/Ancient_Greek" title="Ancient Greek">Greek</a> μάθημα <i>máthēma</i>, “knowledge, study, learning”) is the study of topics such as <a href="/wiki/Quantity" title="Quantity">quantity</a> (<a href="/wiki/Number" title="Number">numbers</a>),<sup id="cite_ref-OED_2-0" class="reference"><a href="#cite_note-OED-2">[2]</a></sup> <a href="/wiki/Structure" title="Structure">structure</a>,<sup id="cite_ref-Kneebone_3-0" class="reference"><a href="#cite_note-Kneebone-3">[3]</a></sup> <a href="/wiki/Space" title="Space">space</a>,<sup id="cite_ref-OED_2-1" class="reference"><a href="#cite_note-OED-2">[2]</a></sup> and <a href="/wiki/Calculus" title="Calculus">change</a>.<sup id="cite_ref-LaTorre_4-0" class="reference"><a href="#cite_note-LaTorre-4">[4]</a></sup><sup id="cite_ref-Ramana_5-0" class="reference"><a href="#cite_note-Ramana-5">[5]</a></sup><sup id="cite_ref-Ziegler_6-0" class="reference"><a href="#cite_note-Ziegler-6">[6]</a></sup> There is a range of views among mathematicians and philosophers as to the exact scope and <a href="/wiki/Definition_of_mathematics" title="Definition of mathematics" class="mw-redirect">definition of mathematics</a>.<sup id="cite_ref-Mura_7-0" class="reference"><a href="#cite_note-Mura-7">[7]</a></sup><sup id="cite_ref-Runge_8-0" class="reference"><a href="#cite_note-Runge-8">[8]</a></sup></p>
+<p><b>Mathematics</b> (from <a href="/wiki/Ancient_Greek" title="Ancient Greek">Greek</a> μάθημα <i>máthēma</i>, “knowledge, study, learning”) is the study of topics such as <a href="/wiki/Quantity" title="Quantity">quantity</a> (<a href="/wiki/Number" title="Number">numbers</a>),<sup id="cite_ref-OED_2-0" class="reference"><a href="#cite_note-OED-2">[2]</a></sup> <a href="/wiki/Structure" title="Structure">structure</a>,<sup id="cite_ref-Kneebone_3-0" class="reference"><a href="#cite_note-Kneebone-3">[3]</a></sup> <a href="/wiki/Space" title="Space">space</a>,<sup id="cite_ref-OED_2-1" class="reference"><a href="#cite_note-OED-2">[2]</a></sup> and <a href="/wiki/Calculus" title="Calculus">change</a>.<sup id="cite_ref-LaTorre_4-0" class="reference"><a href="#cite_note-LaTorre-4">[4]</a></sup><sup id="cite_ref-Ramana_5-0" class="reference"><a href="#cite_note-Ramana-5">[5]</a></sup><sup id="cite_ref-Ziegler_6-0" class="reference"><a href="#cite_note-Ziegler-6">[6]</a></sup> There is a range of views among mathematicians and philosophers as to the exact scope and <a href="/wiki/Definition_of_mathematics" title="Definition of mathematics" class="mw-redirect">definition of mathematics</a>.<sup id="cite_ref-Mura_7-0" class="reference"><a href="#cite_note-Mura-7">[7]</a></sup><sup id="cite_ref-Runge_8-0" class="reference"><a href="#cite_note-Runge-8">[8]</a></sup></p>
+<b>Mathematics</b>
+<b>Mathematics</b>
+Mathematics
+ (from 
+<a href="/wiki/Ancient_Greek" title="Ancient Greek">Greek</a>
+<a href="/wiki/Ancient_Greek" title="Ancient Greek">Greek</a>
+Greek
+ μάθημα 
+<i>máthēma</i>
+<i>máthēma</i>
+máthēma
+, “knowledge, study, learning”) is the study of topics such as 
+<a href="/wiki/Quantity" title="Quantity">quantity</a>
+<a href="/wiki/Quantity" title="Quantity">quantity</a>
+is valid
+current url
+https://en.wikipedia.org/wiki/Quantity
+<p><b>Quantity</b> is a <a href="/wiki/Property_(philosophy)" title="Property (philosophy)">property</a> that can exist as a <a href="/wiki/Magnitude_(mathematics)" title="Magnitude (mathematics)">magnitude</a> or <a href="/wiki/Counting" title="Counting">multitude</a>. Quantities can be compared in terms of "more," "less," or "equal," or by assigning a numerical value in terms of a unit of measurement. Quantity is among the basic <a href="/wiki/Class_(philosophy)" title="Class (philosophy)">classes</a> of things along with <a href="/wiki/Quality_(philosophy)" title="Quality (philosophy)">quality</a>, <a href="/wiki/Substance_theory" title="Substance theory">substance</a>, <a href="/wiki/Change_(mathematics)" title="Change (mathematics)" class="mw-redirect">change</a>, and relation. Some quantities are such by their inner nature (as number), while others are functioning as states (properties, dimensions, attributes) of things such as heavy and light, long and short, broad and narrow, small and great, or much and little. A small quantity is sometimes referred to as a <b>quantulum</b>.</p>
+<p><b>Quantity</b> is a <a href="/wiki/Property_(philosophy)" title="Property (philosophy)">property</a> that can exist as a <a href="/wiki/Magnitude_(mathematics)" title="Magnitude (mathematics)">magnitude</a> or <a href="/wiki/Counting" title="Counting">multitude</a>. Quantities can be compared in terms of "more," "less," or "equal," or by assigning a numerical value in terms of a unit of measurement. Quantity is among the basic <a href="/wiki/Class_(philosophy)" title="Class (philosophy)">classes</a> of things along with <a href="/wiki/Quality_(philosophy)" title="Quality (philosophy)">quality</a>, <a href="/wiki/Substance_theory" title="Substance theory">substance</a>, <a href="/wiki/Change_(mathematics)" title="Change (mathematics)" class="mw-redirect">change</a>, and relation. Some quantities are such by their inner nature (as number), while others are functioning as states (properties, dimensions, attributes) of things such as heavy and light, long and short, broad and narrow, small and great, or much and little. A small quantity is sometimes referred to as a <b>quantulum</b>.</p>
+<b>Quantity</b>
+<b>Quantity</b>
+Quantity
+ is a 
+<a href="/wiki/Property_(philosophy)" title="Property (philosophy)">property</a>
+<a href="/wiki/Property_(philosophy)" title="Property (philosophy)">property</a>
+is valid
+current url
+https://en.wikipedia.org/wiki/Property_(philosophy)
+<p>In <a href="/wiki/Philosophy" title="Philosophy">philosophy</a> and <a href="/wiki/Mathematics" title="Mathematics">mathematics</a> , a <b>property</b> is a characteristic of an <a href="/wiki/Object_(philosophy)" title="Object (philosophy)">object</a>; a red object is said to have the property of redness. The property may be considered a form of object in its own right, able to possess other properties. A property however differs from individual objects in that it may be <a href="/wiki/Instantiation_principle" title="Instantiation principle">instantiated</a>, and often in more than one thing. It differs from the logical/mathematical concept of <a href="/wiki/Class_(set_theory)" title="Class (set theory)">class</a> by not having any concept of <a href="/wiki/Extensionality" title="Extensionality">extensionality</a>, and from the philosophical concept of <a href="/wiki/Class_(philosophy)" title="Class (philosophy)">class</a> in that a property is considered to be distinct from the objects which possess it. Understanding how different individual entities (or particulars) can in some sense have some of the same properties is the basis of the <a href="/wiki/Problem_of_universals" title="Problem of universals">problem of universals</a>. The terms <b>attribute</b> and <b>quality</b> have similar meanings.</p>
+<p>In <a href="/wiki/Philosophy" title="Philosophy">philosophy</a> and <a href="/wiki/Mathematics" title="Mathematics">mathematics</a> , a <b>property</b> is a characteristic of an <a href="/wiki/Object_(philosophy)" title="Object (philosophy)">object</a>; a red object is said to have the property of redness. The property may be considered a form of object in its own right, able to possess other properties. A property however differs from individual objects in that it may be <a href="/wiki/Instantiation_principle" title="Instantiation principle">instantiated</a>, and often in more than one thing. It differs from the logical/mathematical concept of <a href="/wiki/Class_(set_theory)" title="Class (set theory)">class</a> by not having any concept of <a href="/wiki/Extensionality" title="Extensionality">extensionality</a>, and from the philosophical concept of <a href="/wiki/Class_(philosophy)" title="Class (philosophy)">class</a> in that a property is considered to be distinct from the objects which possess it. Understanding how different individual entities (or particulars) can in some sense have some of the same properties is the basis of the <a href="/wiki/Problem_of_universals" title="Problem of universals">problem of universals</a>. The terms <b>attribute</b> and <b>quality</b> have similar meanings.</p>
+In 
+<a href="/wiki/Philosophy" title="Philosophy">philosophy</a>
+<a href="/wiki/Philosophy" title="Philosophy">philosophy</a>
+is valid
+current url
+https://en.wikipedia.org/wiki/Philosophy
+is target url
+SUCCESS: Page has been found!
+https://en.wikipedia.org/wiki/Java_(programming_language)
+https://en.wikipedia.org/wiki/Programming_language
+https://en.wikipedia.org/wiki/Formal_language
+https://en.wikipedia.org/wiki/Mathematics
+https://en.wikipedia.org/wiki/Quantity
+https://en.wikipedia.org/wiki/Property_(philosophy)
+https://en.wikipedia.org/wiki/Philosophy
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

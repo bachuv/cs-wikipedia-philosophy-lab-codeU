@@ -33,6 +33,7 @@ public class WikiPhilosophy {
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws IOException {
+        System.out.println("main");
         
 		String url = "https://en.wikipedia.org/wiki/Java_(programming_language)";
         String targetUrl = "https://en.wikipedia.org/wiki/Philosophy";
@@ -41,13 +42,15 @@ public class WikiPhilosophy {
         boolean finished = false;
         boolean reachedTarget = false;
         
-        if(!finished){
+        while(!finished){
+            
             Elements paragraphs = wf.fetchWikipedia(url);
             Element firstPara = paragraphs.get(0);
 		
             Iterable<Node> iter = new WikiNodeIterable(firstPara);
         
             for (Node node: iter) {
+                System.out.println(node.toString());
                 if (node instanceof TextNode) {
                     if(((TextNode)node).text().contains("(")){
                         //add 1 when you see an open parenthese
@@ -60,14 +63,19 @@ public class WikiPhilosophy {
                     //the parentheses will cancel each other out at the end
                 }
                 if (node instanceof Element){
+                    System.out.println(node.toString());
                     String currURL = ((Element)node).attr("abs:href");
                     if(isValid((Element)node, url)){
+                        System.out.println("is valid");
                         if(visitedUrls.contains(currURL)){
                             finished = true;
                         }
+                        System.out.println("current url");
+                        System.out.println(currURL);
                         visitedUrls.add(currURL);
                         url = currURL;
                         if(visitedUrls.contains(targetUrl)){
+                            System.out.println("is target url");
                             finished = true;
                             reachedTarget = true;
                         }
@@ -108,6 +116,7 @@ public class WikiPhilosophy {
             if(parent.tagName().equals("i") || parent.tagName().equals("em")){
                 return false;
             }
+            parent = parent.parent();
         }
         
         //check for parentheses
@@ -115,7 +124,7 @@ public class WikiPhilosophy {
             return false;
         }
         
-        visitedUrls.add(curr);
+        //visitedUrls.add(curr);
         return true;
     }
 }
